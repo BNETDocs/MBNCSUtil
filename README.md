@@ -1,7 +1,5 @@
 # MBNCSUtil
-**MBNCSUtil** provides Battle.net authentication services for managed applications.
-
-Originally written by [@robpaveza](https://github.com/robpaveza) a.k.a. MyndFyre.
+**MBNCSUtil** (**M**anaged **BNCS** **U**tilities) provides Battle.net authentication services for managed applications.
 
 [![GitHub watchers](https://img.shields.io/github/watchers/BNETDocs/MBNCSUtil?style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/watchers)
 [![GitHub Repo stars](https://img.shields.io/github/stars/BNETDocs/MBNCSUtil?style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/stargazers)
@@ -14,6 +12,13 @@ Originally written by [@robpaveza](https://github.com/robpaveza) a.k.a. MyndFyre
 
 [![GitHub All Releases](https://img.shields.io/github/downloads/BNETDocs/MBNCSUtil/total?style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/releases/latest)
 [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/BNETDocs/MBNCSUtil?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/releases/latest)
+
+## Authors
+
+* Originally written by: [@robpaveza](https://github.com/robpaveza) a.k.a. MyndFyre, adapted from original [BNCSUtil](https://github.com/BNETDocs/bncsutil) source code at request of its author.
+* Adapted to .NET Core 3.1 by: [@carlbennett](https://github.com/carlbennett) a.k.a. Caaaaarrrrlll, [@wjlafrance](https://github.com/wjlafrance) a.k.a. joe)x86(
+* Special thanks to: [BNETDocs](https://bnetdocs.org)
+* Honorable mention to: Valhalla Legends (a.k.a. vL), x86
 
 ## Setup
 
