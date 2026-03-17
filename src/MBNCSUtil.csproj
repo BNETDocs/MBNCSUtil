@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Copyright>Copyright © Robert Paveza, 2005-2008.  Adapted from BNCSUtil at the request of the author.  Licensed under the modified BSD license.  See License.txt for licensing details.  Blizzard, Battle.net, Starcraft, Warcraft, Warcraft II: Battle.net Edition, The Tides of Darkness, Into the Dark Portal, Diablo, The Lord of Destruction, Brood War, The Reign of Chaos, and The Frozen Throne are trademarks or registered trademarks of Blizzard Entertainment Inc. in the United States and/or other countries.  Other marks may be the trademarks or registered trademarks of their respective owners.</Copyright>
     <Description>Provides Battle.net authentication services for managed applications.</Description>
