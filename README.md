@@ -8,7 +8,7 @@
 
 [![GitHub top language](https://img.shields.io/github/languages/top/BNETDocs/MBNCSUtil?style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/search?l=c%23)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/BNETDocs/MBNCSUtil?style=for-the-badge)
-[![GitHub Workflow Status (develop)](https://img.shields.io/github/workflow/status/BNETDocs/MBNCSUtil/.NET%20Core/develop?style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/actions?query=workflow%3A%22.NET%20Core%22)
+[![GitHub Workflow Status (develop)](https://img.shields.io/github/actions/workflow/status/BNETDocs/MBNCSUtil/dotnet.yml?branch=develop&style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/actions/workflows/dotnet.yml)
 
 [![GitHub All Releases](https://img.shields.io/github/downloads/BNETDocs/MBNCSUtil/total?style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/releases/latest)
 [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/BNETDocs/MBNCSUtil?include_prereleases&label=latest%20release&style=for-the-badge)](https://github.com/BNETDocs/MBNCSUtil/releases/latest)
@@ -16,7 +16,7 @@
 ## Authors
 
 * Originally written by: [@robpaveza](https://github.com/robpaveza) a.k.a. MyndFyre, adapted from original [BNCSUtil](https://github.com/BNETDocs/bncsutil) source code at request of its author.
-* Adapted to .NET Core 3.1 by: [@carlbennett](https://github.com/carlbennett) a.k.a. Caaaaarrrrlll, [@wjlafrance](https://github.com/wjlafrance) a.k.a. joe)x86(
+* Adapted to .NET by: [@carlbennett](https://github.com/carlbennett) a.k.a. Caaaaarrrrlll, [@wjlafrance](https://github.com/wjlafrance) a.k.a. joe)x86(
 * Special thanks to: [BNETDocs](https://bnetdocs.org)
 * Honorable mention to: Valhalla Legends (a.k.a. vL), x86
 
@@ -24,7 +24,7 @@
 
 ### Requirements
 
-MBNCSUtil is built on the .NET Core 3.1 platform. Linux users may wish to install the Mono package which provides a `dotnet` commandline.
+MBNCSUtil is built on the .NET 10.0 platform. Linux users may wish to install the .NET SDK package which provides a `dotnet` commandline.
 
 ### Download
 
@@ -34,7 +34,7 @@ Go to [Releases](https://github.com/BNETDocs/MBNCSUtil/releases/latest) and down
 
 #### Windows
 
-Users on the Windows platform must install Microsoft Visual Studio 2019 (or equivalent) which provides .NET Core 3.1 development SDK.
+Users on the Windows platform must install Microsoft Visual Studio 2022 (or equivalent) which provides .NET 10.0 development SDK.
 
 #### Linux
 
