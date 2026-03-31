@@ -87,7 +87,7 @@ namespace MBNCSUtil
         public NLS(string Username, string Password)
         {
             userName = Username;
-            userNameAscii = Encoding.ASCII.GetBytes(userName);
+            userNameAscii = Encoding.Latin1.GetBytes(userName);
             password = Password;
 
             byte[] rand_a = new byte[32];
@@ -435,7 +435,7 @@ namespace MBNCSUtil
                 userName.ToUpper(CultureInfo.InvariantCulture), ":", password.ToUpper(CultureInfo.InvariantCulture)
                 );
 
-            byte[] unpw_bytes = Encoding.ASCII.GetBytes(unpwexpr);
+            byte[] unpw_bytes = Encoding.Latin1.GetBytes(unpwexpr);
             byte[] hash1 = s_sha.ComputeHash(unpw_bytes);
 
             byte[] unpw_salt_bytes = new byte[serverSalt.Length + hash1.Length]; // should be 52
@@ -503,7 +503,7 @@ namespace MBNCSUtil
             MemoryStream ms = new MemoryStream(40 + saltFromServer.Length + A.GetBytes().Length + issuedServerKey.Length + local_k.Length);
             BinaryWriter bw = new BinaryWriter(ms);
             bw.Write(g_xor_n.GetBytes());
-            bw.Write(s_sha.ComputeHash(Encoding.ASCII.GetBytes(userName.ToUpper(CultureInfo.InvariantCulture))));
+            bw.Write(s_sha.ComputeHash(Encoding.Latin1.GetBytes(userName.ToUpper(CultureInfo.InvariantCulture))));
             bw.Write(saltFromServer);
             bw.Write(EnsureArrayLength(A.GetBytes(), 32));
 #if DEBUG

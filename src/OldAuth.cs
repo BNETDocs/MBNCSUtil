@@ -63,7 +63,7 @@ namespace MBNCSUtil
         /// <returns>A 20-byte buffer containing the hash value.</returns>
         public static byte[] HashPassword(string data)
         {
-            return HashData(Encoding.ASCII.GetBytes(data));
+            return HashData(Encoding.Latin1.GetBytes(data));
         }
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace MBNCSUtil
         public static byte[] DoubleHashPassword(string data,
             int clientToken, int serverToken)
         {
-            return DoubleHashData(Encoding.ASCII.GetBytes(data),
+            return DoubleHashData(Encoding.Latin1.GetBytes(data),
                 unchecked((uint)clientToken),
                 unchecked((uint)serverToken));
         }
@@ -116,7 +116,7 @@ namespace MBNCSUtil
         public static byte[] DoubleHashPassword(string data,
             uint clientToken, uint serverToken)
         {
-            return DoubleHashData(Encoding.ASCII.GetBytes(data),
+            return DoubleHashData(Encoding.Latin1.GetBytes(data),
                 clientToken, serverToken);
         }
 

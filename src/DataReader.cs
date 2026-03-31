@@ -358,7 +358,7 @@ namespace MBNCSUtil
             if (idx0 == -1)
                 idx0 = length;
 
-            string result = Encoding.ASCII.GetString(b, 0, idx0);
+            string result = Encoding.Latin1.GetString(b, 0, idx0);
             return result;
         }
 
@@ -380,7 +380,7 @@ namespace MBNCSUtil
         /// <returns>The next C-style string.</returns>
         public string ReadCString()
         {
-            return ReadCString(Encoding.ASCII);
+            return ReadCString(Encoding.Latin1);
         }
 
         /// <summary>
@@ -399,7 +399,7 @@ namespace MBNCSUtil
         /// <returns>The next pascal-style string.</returns>
         public string ReadPascalString()
         {
-            return ReadPascalString(Encoding.ASCII);
+            return ReadPascalString(Encoding.Latin1);
         }
 
         /// <summary>
@@ -421,7 +421,7 @@ namespace MBNCSUtil
         /// <returns>The next wide-pascal-style string.</returns>
         public string ReadWidePascalString()
         {
-            return ReadWidePascalString(Encoding.ASCII);
+            return ReadWidePascalString(Encoding.Latin1);
         }
 
         /// <summary>

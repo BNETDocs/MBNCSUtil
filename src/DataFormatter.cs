@@ -32,7 +32,7 @@ namespace MBNCSUtil
     /// <example>
     /// <para>This example demonstrates how the formatter prints out binary data.</para>
     /// <code language="c#">
-    /// DataFormatter.WriteToConsole(XSha1.CalculateHash(Encoding.ASCII.GetBytes("password")));
+    /// DataFormatter.WriteToConsole(XSha1.CalculateHash(Encoding.Latin1.GetBytes("password")));
     /// </code>
     /// <para><b>Output:</b></para>
     /// <code>

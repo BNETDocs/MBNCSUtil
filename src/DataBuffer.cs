@@ -583,7 +583,7 @@ namespace MBNCSUtil
         /// <exception cref="ArgumentNullException">Either <c>str</c> or <c>enc</c> were <b>null</b> (<b>Nothing</b> in Visual Basic).</exception>
         public void InsertCString(string str)
         {
-            InsertCString(str, Encoding.ASCII);
+            InsertCString(str, Encoding.Latin1);
         }
 
         /// <summary>
@@ -625,7 +625,7 @@ namespace MBNCSUtil
         /// <exception cref="ArgumentException">The length of <c>str</c> was too great; maximum string length is 255 characters.</exception>
         public void InsertPascalString(string str)
         {
-            InsertPascalString(str, Encoding.ASCII);
+            InsertPascalString(str, Encoding.Latin1);
         }
 
         /// <summary>
@@ -662,7 +662,7 @@ namespace MBNCSUtil
         /// <exception cref="ArgumentException">The length of <c>str</c> was too great; maximum string length is 65,535 characters.</exception>
         public void InsertWidePascalString(string str)
         {
-            InsertWidePascalString(str, Encoding.ASCII);
+            InsertWidePascalString(str, Encoding.Latin1);
         }
 
         /// <summary>
@@ -732,7 +732,7 @@ namespace MBNCSUtil
                     for (int i = 0; i < numNulls; i++)
                         Insert(padding);
                 }
-                byte[] bar = Encoding.ASCII.GetBytes(str);
+                byte[] bar = Encoding.Latin1.GetBytes(str);
                 for (int i = bar.Length - 1; i >= 0; i--)
                     Insert(bar[i]);
             }

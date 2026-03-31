@@ -200,7 +200,7 @@ namespace MBNCSUtil.Data
             string list = string.Empty;
             using (MpqFileStream mfs = OpenFile("(listfile)"))
             {
-                StreamReader sr = new StreamReader(mfs, Encoding.ASCII);
+                StreamReader sr = new StreamReader(mfs, Encoding.Latin1);
                 list = sr.ReadToEnd();
                 sr.Close();
             }
