@@ -170,7 +170,7 @@ namespace MBNCSUtil.Util
         internal unsafe static int GetDigit(string filename)
         {
             int digit_1, digit_2;
-            byte[] filenameBytes = Encoding.ASCII.GetBytes(filename);
+            byte[] filenameBytes = Encoding.Latin1.GetBytes(filename);
             fixed (byte* pdigit_ptr = filenameBytes)
             {
                 byte* digit_ptr = (byte*)(pdigit_ptr + filename.Length - 4);

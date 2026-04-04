@@ -53,7 +53,7 @@ namespace MBNCSUtil.Data
                 temp = code[1];
                 code[1] = code[2];
                 code[2] = temp;
-                m_softwareList[i] = Encoding.ASCII.GetString(code);
+                m_softwareList[i] = Encoding.Latin1.GetString(code);
             }
         }
 

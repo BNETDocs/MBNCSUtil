@@ -143,7 +143,7 @@ namespace MBNCSUtil.Data
                     throw new InvalidDataException("Only 24-bit TGA is supported.");
                 StartDescriptor descriptor = (StartDescriptor)br.ReadByte();
                 byte[] info_bytes = br.ReadBytes(infoLength);
-                Trace.WriteLine(Encoding.ASCII.GetString(info_bytes), "BNI header: information");
+                Trace.WriteLine(Encoding.Latin1.GetString(info_bytes), "BNI header: information");
 
                 int numberOfPixels = width * height;
 
